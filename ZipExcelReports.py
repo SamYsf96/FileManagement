@@ -48,16 +48,6 @@ def fileMove(file):
         destination = 'Y:\Projects\M Miller\Base_data\Rent Rolls'
         dest = os.path.join(destination, name)
         shutil.move(file, dest)
-    elif "ADC" in file and "Scheduler_Reports" in fileDesc:
-        name = os.path.basename(file)
-        destination = 'Y:\Projects\M Miller\Base_data\ADC'
-        dest = os.path.join(destination, name)
-        shutil.move(file, dest)
-    elif "General Ledger" in file and "Scheduler Reports" in fileDesc:
-        name = os.path.basename(file)
-        destination = 'X:\Data_Analytics\Sales Spending\Yardi reports'
-        dest = os.path.join(destination, name)
-        shutil.move(file, dest)
 
 def loop_through_files():
     for f in source:
