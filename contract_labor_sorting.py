@@ -20,7 +20,7 @@ def copy_file(file,community_name):
                 for j in date_range_2021:
                     if filedesc[-12:-9] == j:
                         name = os.path.basename(file)
-                        destination = f"Q:\\{community_qdrive[community_name]}\\Executive Director\\Accounting & Finance\\Contract Labor\\{j}2021\\Invoices"
+                        destination = f"Q:\\{community_qdrive[community_name]}\\Executive Director\\Accounting & Finance\\Contract Labor\\2021\\{j}2021\\Invoices"
                         dest = os.path.join(destination,name)
                         shutil.copyfile(file,dest)
             elif filedesc[-7:-4] == '.22':
